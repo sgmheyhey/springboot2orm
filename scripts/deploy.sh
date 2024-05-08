@@ -1,7 +1,7 @@
 #!/bin/bash
 
 REPOSITORY=/home/ubuntu/app/step2
-PROJECT_NAME=RestApiPractice
+PROJECT_NAME=springboot2orm
 
 cd $REPOSITORY/$PROJECT_NAME
 
@@ -11,7 +11,7 @@ cp $REPOSITORY/zip/*.jar $REPOSITORY/
 
 echo "> 현재 구동 중인 애플리케이션 pid 확인"
 
-CURRENT_PID=$(pgrep -fl RestApiPractice | grep java | awk '{print $1}')
+CURRENT_PID=$(pgrep -fl springboot2orm | grep java | awk '{print $1}')
 
 echo "현재 구동 중인 애플리케이션 pid: $CURRENT_PID"
 
